@@ -75,6 +75,7 @@ header nav ul li button {
   border: none;
   outline: none;
   background-color: transparent;
+  cursor:pointer;
 }
 .desktop-search-bar {
   display: block;
