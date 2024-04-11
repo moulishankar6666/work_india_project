@@ -32,7 +32,7 @@ class Upcoming extends Component {
 
   getMovieData = async (page) => {
     this.setState({ status: apiStatus.progress });
-    const apiKey = "ebd68c0a625eb2337b6312fe363d9d1a2";
+    const apiKey = "ebd68c0a625eb2337b6312fe363d9d1a";
     const options = { method: "GET" };
     const response = await fetch(
       `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=en-US&page=${page}`,

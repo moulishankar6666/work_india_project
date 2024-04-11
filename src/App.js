@@ -1,11 +1,11 @@
 import { Component } from "react";
-import { Routes, Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./components/Home";
 import TopRated from "./components/TopRated";
 import Upcoming from "./components/Upcoming";
 import Search from "./components/Search";
-// import MovieDetailsItem from "./components/MovieDetailsItem";
+import MovieDetailsItem from "./components/MovieDetailsItem";
 import MovieContext from "./context/MovieContext";
 
 import "./App.css";
@@ -20,9 +20,9 @@ const apiStatus = {
 class App extends Component {
   state = { moviesList: [], status: apiStatus.initial };
 
-  // componentDidMount() {
-  //   this.getMovieData("");
-  // }
+  componentDidMount() {
+    this.getMovieData("");
+  }
 
   onClickButton = (value) => {
     this.getMovieData(value);
@@ -72,7 +72,7 @@ class App extends Component {
           <Route exact path="/search" element={<Search />} />
           <Route exact path="/top-rated" element={<TopRated />} />
           <Route exact path="/upcoming" element={<Upcoming />} />
-          {/* <Route exact path="/movie/:id" component={MovieDetailsItem} /> */}
+          <Route exact path="/movie/:id" element={<MovieDetailsItem />} />
         </Routes>
       </MovieContext.Provider>
     );
