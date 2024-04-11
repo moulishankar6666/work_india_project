@@ -36,6 +36,7 @@ class Header extends Component {
                         value={userInput}
                         onChange={this.setUserInput}
                         type="text"
+                          placeholder="Search movie name"
                       />
                       <button
                         className={
@@ -86,6 +87,7 @@ class Header extends Component {
                         value={userInput}
                         onChange={this.setUserInput}
                         type="search"
+  placeholder="Search movie name"
                       />
                       <button
                         className={
