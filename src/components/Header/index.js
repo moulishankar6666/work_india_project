@@ -53,7 +53,7 @@ class Header extends Component {
                   <Link className="link" to="/">
                     <li>
                       <button
-                        className={path === "" ? "active-tab" : ""}
+                        className={path === "/" ? "active-tab" : ""}
                         type="button"
                       >
                         Popular
@@ -63,7 +63,7 @@ class Header extends Component {
                   <Link className="link" to="/top-rated">
                     <li>
                       <button
-                        className={path === "top-rated" ? "active-tab" : ""}
+                        className={path === "/top-rated" ? "active-tab" : ""}
                         type="button"
                       >
                         Top_Rated
@@ -73,7 +73,7 @@ class Header extends Component {
                   <Link className="link" to="/upcoming">
                     <li>
                       <button
-                        className={path === "upcoming" ? "active-tab" : ""}
+                        className={path === "/upcoming" ? "active-tab" : ""}
                         type="button"
                       >
                         Upcoming
@@ -89,7 +89,7 @@ class Header extends Component {
                       />
                       <button
                         className={
-                          path === "search" ? "active-tab button" : "button"
+                          path === "/search" ? "active-tab button" : "button"
                         }
                         onClick={() => clickButton(userInput)}
                         type="button"
